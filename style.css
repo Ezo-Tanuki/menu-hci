@@ -16,6 +16,7 @@ header {
 
 header ul {
     list-style-type: None;
+    margin-left: 5px;
 }
 
 header ul li {
@@ -51,17 +52,27 @@ body {
 }
 
 .card {
-    padding: 0 0 10em;
+    padding: 0 0 0em;
     background-color:rgba(255, 190, 110, 0.298);
     width: 270px;
-    height: 380px;
+    height: 500px;
     border: 1px solid rgba(255, 255, 255, 0.729);
+    overflow: hidden;
+}
+
+.text-container {
+    margin: 10px 0 0 5px;
 }
 
 .cropped {
     width: 270px;
     height: 200px;
     object-fit: cover;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 1000px) {
@@ -74,5 +85,18 @@ body {
 @media screen and (max-width: 670px) {
     .container-2 {
         flex-direction: column;
+        width: 100%;
     }
+
+    .card {
+        width: 100%;
+        align-items: center;
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+
 }
